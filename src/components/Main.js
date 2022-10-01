@@ -10,41 +10,42 @@ const Div = styled.div`
 const Button = styled.button`
   background-color: pink;
   font-size: 15px;
-  border: solid 1px;
   border-radius: 50%;
+  border: none;
   width: 50px;
   height: 50px;
   margin: 10px;
 `;
 
 const Input = styled.input`
-  border-radius: 20%;
   width: 80px;
   height: 50px;
   margin: 10px;
   font-size: 20px;
+  border: none;
 `;
 
 const H1 = styled.h1`
-  font-size: 45px;
+  font-size: 30px;
+  color: white;
 `;
 
 export default class Mains extends Component {
   state = {
     num1: "",
     num2: "",
-    result: 0
+    result: 0,
   };
 
   handleChange1 = (event) => {
     this.setState({
-      num1: Number(event.target.value)
+      num1: Number(event.target.value),
     });
   };
 
   handleChange2 = (event) => {
     this.setState({
-      num2: Number(event.target.value)
+      num2: Number(event.target.value),
     });
   };
 
@@ -53,7 +54,7 @@ export default class Mains extends Component {
     this.setState({
       result: num1 + num2,
       num1: "",
-      num2: ""
+      num2: "",
     });
   };
 
@@ -62,7 +63,7 @@ export default class Mains extends Component {
     this.setState({
       result: num1 - num2,
       num1: "",
-      num2: ""
+      num2: "",
     });
   };
 
@@ -71,7 +72,7 @@ export default class Mains extends Component {
     this.setState({
       result: num1 * num2,
       num1: "",
-      num2: ""
+      num2: "",
     });
   };
 
@@ -80,7 +81,7 @@ export default class Mains extends Component {
     this.setState({
       result: num1 / num2,
       num1: "",
-      num2: ""
+      num2: "",
     });
   };
 
